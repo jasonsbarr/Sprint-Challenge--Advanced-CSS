@@ -160,21 +160,6 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.btn {
-  background-color: #23293B;
-  color: #F6F6F6;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.8rem;
-  padding: 1rem 2rem;
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-  border: 1px solid #23293B;
-}
-.btn:hover {
-  background-color: #F6F6F6;
-  color: #23293B;
-}
 .nav-list {
   align-items: center;
   display: flex;
@@ -274,6 +259,21 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #23293B;
+  color: #F6F6F6;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #23293B;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F6F6;
+  color: #23293B;
 }
 .home .walk .walk-img {
   width: 46%;
