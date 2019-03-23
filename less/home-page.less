@@ -1,8 +1,27 @@
 // Home Content
+.header {
+  background-color: @nav-bg;
+  padding: 1.3rem;
+
+  .page-title {
+    font-size: 4rem;
+    margin-bottom: 1.8rem;
+    text-align: center;
+  }
+}
 
 .home {
 
   .intro {
+
+    &-img {
+      .rounded();
+
+      @media screen and @phone {
+        max-height: 120px;
+        width: 100%;
+      }
+    }
 
     h2 {
       padding: 15px;
@@ -24,6 +43,17 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media screen and @phone {
+        width: 100%;
+        margin: 20px 5%;
+      }
+    }
+  }
+
+  @media screen and @phone {
+    .space-images img:not(:first-child) {
+      display: none;
     }
   }
 
@@ -46,8 +76,18 @@
     display: flex;
     justify-content: center;
 
+    @media screen and @phone {
+      flex-direction: column-reverse;
+      margin-top: 25px;
+      padding: 2rem;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media screen and @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +98,27 @@
       }
 
       .btn {
+        .button(@bg: @ebony-clay;
+        @color: @wild-sand);
+        border: 1px solid @ebony-clay;
+
+        @media screen and @phone {
+          padding: 2.5rem;
+          text-align: center;
+          width: 100%;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media screen and @phone {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 2rem;
+      }
       
       img {
         width: 100%;
