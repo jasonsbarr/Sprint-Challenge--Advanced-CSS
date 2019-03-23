@@ -169,7 +169,7 @@ p {
   margin-left: 4%;
 }
 .nav-link {
-  color: #23293B;
+  color: #454A59;
   font-size: 1.8rem;
   letter-spacing: -0.1rem;
   text-decoration: none;
@@ -192,6 +192,9 @@ footer {
   font-size: 4rem;
   margin-bottom: 1.8rem;
   text-align: center;
+}
+.home .intro-img {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
