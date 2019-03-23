@@ -2,9 +2,7 @@
 .nav {
     
     &-list {
-        align-items: center;
-        display: flex;
-        justify-content: center;
+        .centered-contents();
     }
 
     &-item + .nav-item {
@@ -12,7 +10,7 @@
     }
 
     &-link {
-        color: @header-font-color;
+        color: @nav-font;
         font-size: 1.8rem;
         letter-spacing: -.1rem;
         text-decoration: none;
