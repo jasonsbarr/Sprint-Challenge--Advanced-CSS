@@ -1,1 +1,34 @@
 // Mixins Here
+.rounded(@radius: 5px) {
+    border-radius: @radius;
+}
+
+.centered-contents() {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.set-colors(@bg: @wild-sand; @color: @ebony-clay) {
+    background-color: @bg;
+    color: @color;
+}
+
+.transitioned(@props: all; @time: .3s; @timing-func: ease-in-out) {
+    transition: @props @time @timing-func;
+}
+
+.button(@bg: #ffffff; @color: @main-font-color; @radius: 5px; @font-size: 2rem; @padding: 1rem 2rem) {
+    background-color: @bg;
+    color: @color;
+    cursor: pointer;
+    font-size: @font-size;
+    padding: @padding;
+    .rounded(@radius);
+    .transitioned();
+
+    &:hover {
+        background-color: @color;
+        color: @bg;
+    }
+}
