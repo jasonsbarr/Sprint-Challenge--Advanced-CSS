@@ -18,10 +18,11 @@
     transition: @props @time @timing-func;
 }
 
-.button(@bg: #ffffff; @color: @main-font-color; @radius: 5px; @font-size: 2rem; @padding: 1rem 2rem) {
+.button(@bg: #ffffff; @color: @main-font-color; @radius: 5px; @font-size: 1.8rem; @padding: 1rem 2rem) {
     background-color: @bg;
     color: @color;
     cursor: pointer;
+    display: inline-block;
     font-size: @font-size;
     padding: @padding;
     .rounded(@radius);
