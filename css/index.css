@@ -160,6 +160,20 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-list {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.nav-item + .nav-item {
+  margin-left: 4%;
+}
+.nav-link {
+  color: #23293B;
+  font-size: 1.8rem;
+  letter-spacing: -0.1rem;
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +183,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.header {
+  background-color: #F6F6F6;
+  padding: 1.3rem;
+}
+.header .page-title {
+  font-size: 4rem;
+  margin-bottom: 1.8rem;
+  text-align: center;
 }
 .home .intro h2 {
   padding: 15px;
